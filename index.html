@@ -4,68 +4,145 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spark</title>
+    <title>Spark | Easily manage your employees and publish work schedules</title>
 
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/main.css" />
 
-      body {
-        font-family: sans-serif;
-        height: 100vh;
-        display: grid;
-        place-items: center;
-        padding: 0 30px;
-      }
-
-      .wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-
-      h1 {
-        color: #333;
-      }
-
-      p {
-        margin: 36px 0 24px;
-        color: #666;
-        max-width: 50ch;
-        line-height: 1.65;
-      }
-
-      p a {
-        white-space: nowrap;
-        text-decoration: none;
-        font-weight: bold;
-        color: #413659;
-      }
-
-      p a:hover {
-        text-decoration: underline;
-      }
-
-      a.button {
-        padding: 12px 18px;
-        font-weight: bold;
-        font-size: 14px;
-        color: #fff;
-        background-color: #413659;
-        border-radius: 99px;
-        text-decoration: none;
-      }
-    </style>
+    <script defer src="./index.js"></script>
   </head>
   <body>
-    <div class="wrapper">
-      <h1>Website coming soon</h1>
-      <p> The landing page for Spark is currently a work in progress. Please check out the <a href="https://github.com/robvanbakel/spark">GitHub repository for this project</a> or check out the demo area to try the app. </p>
-      <a class="button" href="https://demo.sparkscheduler.com">Try Spark</a>
-    </div>
+    <header>
+      <div class="container">
+        <nav>
+          <img src="./img/spark_logo.svg" alt="Spark Logo" />
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="https://github.com/robvanbakel/spark" target="_blank">Documentation</a></li>
+            <li><a href="https://github.com/robvanbakel/spark/commits/main" target="_blank">Changelog</a></li>
+            <li><a href="mailto:info@sparkscheduler.com">Contact</a></li>
+          </ul>
+          <a href="https://demo.sparkscheduler.com" class="button tertiary">Open Spark</a>
+        </nav>
+        <section id="hero">
+          <h1>Manage your employees and get a grip on your planning.</h1>
+          <p class="lead">
+            Say goodbye to emailing large spreadsheets with your employees' work schedules to everyone in your company
+            every week. Spark offers the speed and flexibility you and your employees need.
+          </p>
+          <div class="actions">
+            <a href="https://demo.sparkscheduler.com" class="button primary">Visit demo</a>
+            <a href="#features" class="button secondary">Learn more</a>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main>
+      <section id="showcase">
+        <div class="container">
+          <div class="view-picker">
+            <div class="block active" data-view="staff">
+              <div class="title">
+                <span class="material-icons-round"> table_rows </span>
+                <h4>Staff List</h4>
+              </div>
+              <p>
+                View, add, edit and delete employees was never easier. Search or filter by status to find who you were
+                looking for in mere seconds.
+              </p>
+            </div>
+            <div class="block" data-view="planner">
+              <div class="title">
+                <span class="material-icons-round"> grid_view </span>
+                <h4>Planner</h4>
+              </div>
+              <p>
+                Create weekly schedules while keeping track of your employees' plus/minus hours. Updates are instantly
+                pushed to your employees.
+              </p>
+            </div>
+            <div class="block" data-view="employee">
+              <div class="title">
+                <span class="material-icons-round"> person </span>
+                <h4>Employee</h4>
+              </div>
+              <p>
+                Employees can login, see their schedules and subscribe to their schedule through their own calendar,
+                instantly receiving any update you make.
+              </p>
+            </div>
+          </div>
+          <div class="view-display">
+            <img src="./img/view_staff.jpg" />
+          </div>
+        </div>
+      </section>
+      <section id="features">
+        <div class="container">
+          <h1>Features</h1>
+          <div class="feature">
+            <div class="text-wrapper">
+              <h3>Manage your employees</h3>
+              <p>
+                Keeping track of your staff is not an easy task. Spark helps you manage all your employees' personal
+                information in one convenient place.
+              </p>
+              <ul>
+                <li>Change an employee's status to see who's available to work.</li>
+                <li>Leave optional notes about any employee.</li>
+                <li>
+                  Provide the amount of hours in somebody's contract. This will serve as a guide when creating their
+                  schedule.
+                </li>
+                <li>Add new employees, which can then login and check their schedules.</li>
+              </ul>
+            </div>
+            <div class="image-wrapper right">
+              <img src="./img/view_staff.jpg" class="view" />
+              <img src="./img/modal_editemployee.jpg" class="modal" />
+            </div>
+          </div>
+          <div class="feature">
+            <div class="image-wrapper left">
+              <img src="./img/view_planner.jpg" class="view" />
+              <img src="./img/modal_editshift.jpg" class="modal" />
+            </div>
+            <div class="text-wrapper">
+              <h3>Create and edit schedules</h3>
+              <p>
+                Create, edit and publish work schedules faster than ever while keeping your employees up to date
+                instantly.
+              </p>
+              <ul>
+                <li>Use custom suggestions to quickly fill out details.</li>
+                <li>
+                  Leave optional notes for any shift. It's up to you whether or not they get shared with the employee.
+                </li>
+                <li>Get notified when you're about to overwrite a shift.</li>
+                <li>Employees can synchronize their schedule with their calendar.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <p class="copyright">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          Spark
+        </p>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="https://github.com/robvanbakel/spark" target="_blank">Documentation</a></li>
+          <li><a href="https://github.com/robvanbakel/spark/commits/main" target="_blank">Changelog</a></li>
+          <li><a href="mailto:info@sparkscheduler.com">Contact</a></li>
+        </ul>
+        <a href="https://github.com/robvanbakel/spark" class="github" target="_blank">robvanbakel/spark</a>
+      </div>
+    </footer>
   </body>
 </html>
