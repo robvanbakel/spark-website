@@ -35,6 +35,9 @@ body {
   max-width: 1200px;
   padding: 0 30px;
   margin: 0 auto;
+  &.wide {
+    max-width: 1440px;
+  }
 }
 
 h1 {
@@ -222,7 +225,7 @@ main {
       border-radius: 6px;
       box-shadow: $shadow;
       overflow: hidden;
-      max-height: 670px;
+      max-height: 720px;
       img {
         width: 100%;
       }

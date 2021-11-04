@@ -27,6 +27,9 @@ body {
   padding: 0 30px;
   margin: 0 auto;
 }
+.container.wide {
+  max-width: 1440px;
+}
 
 h1 {
   font-size: 48px;
@@ -234,7 +237,7 @@ main section#showcase .view-display {
   border-radius: 6px;
   box-shadow: 0 4px 36px rgba(80, 141, 240, 0.08);
   overflow: hidden;
-  max-height: 670px;
+  max-height: 720px;
 }
 main section#showcase .view-display img {
   width: 100%;
