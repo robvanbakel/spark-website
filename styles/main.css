@@ -212,6 +212,12 @@ main section#showcase .view-picker .block {
   cursor: pointer;
   transition: opacity 120ms ease;
 }
+@media (max-width: 860px) {
+  main section#showcase .view-picker .block {
+    opacity: 1;
+    cursor: auto;
+  }
+}
 main section#showcase .view-picker .block.active, main section#showcase .view-picker .block:hover {
   opacity: 1;
 }
@@ -238,6 +244,11 @@ main section#showcase .view-display {
   box-shadow: 0 4px 36px rgba(80, 141, 240, 0.08);
   overflow: hidden;
   max-height: 720px;
+}
+@media (max-width: 860px) {
+  main section#showcase .view-display {
+    display: none;
+  }
 }
 main section#showcase .view-display img {
   width: 100%;

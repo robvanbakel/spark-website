@@ -141,7 +141,7 @@ header {
     text-align: center;
     padding: 96px 0;
     @media (max-width: $breakpoint) {
-     padding-top: 48px
+     padding-top: 48px;
     }
     h1 {
       line-height: 1.2;
@@ -197,6 +197,10 @@ main {
         background-color: #fff;
         cursor: pointer;
         transition: opacity 120ms ease;
+        @media (max-width: $breakpoint) {
+          opacity: 1;
+          cursor: auto;
+        }
         &.active,
         &:hover {
           opacity: 1;
@@ -226,6 +230,9 @@ main {
       box-shadow: $shadow;
       overflow: hidden;
       max-height: 720px;
+      @media (max-width: $breakpoint) {
+        display: none;
+      }
       img {
         width: 100%;
       }
